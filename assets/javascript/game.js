@@ -78,7 +78,7 @@ $('#crystal1').on('click', function(){
  })
 //crystal 3
 $('#crystal3').on('click', function(){
-    userCurrentScore = userCurrentScore = crystal3;
+    userCurrentScore = userCurrentScore + crystal3;
     console.log("Current Total: " + userCurrentScore);
     $('#yourTotalScore').text(userCurrentScore);
 
