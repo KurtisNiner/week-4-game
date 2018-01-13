@@ -4,6 +4,7 @@ $(document).ready(function(){
 
 var randomNumber=Math.floor(Math.random()*101 + 19);
 
+//create random target number and gem variables
 $('#targetNumber').text(randomNumber);
 console.log(randomNumber);
 
@@ -15,9 +16,11 @@ var userCurrentScore=0;
 var wins=0;
 var losses=0;
 
+//link losses and wins to variables in html
 $('#howManyWins').text(wins)
 $('#howManyLosses').text(losses)
 
+//reset game function
 function resetGame(){
     userCurrentScore=0;
     randomNumber=Math.floor(Math.random()*101 + 19);
@@ -30,13 +33,14 @@ function resetGame(){
     $('#yourTotalScore').text(userCurrentScore);
 }
 
+//win function
 function win(){
     alert("BRO/SIS, YOU WIN!");
     wins++;
     $('#howManyWins').text(wins);
     resetGame()
 }
-
+//lose function
 function lose(){
     alert("BRO/SIS, YOU LOST, THAT REALLY SUCKS, GO GET ICE CREAM TO CHEER YOU UP");
     losses++;
@@ -44,6 +48,7 @@ function lose(){
     resetGame()
 }
 
+//crystal 1
 $('#crystal1').on('click', function(){
     userCurrentScore = userCurrentScore + crystal1;
     console.log("Current total: " + userCurrentScore);
@@ -56,7 +61,8 @@ $('#crystal1').on('click', function(){
     else if (userCurrentScore >= randomNumber){
         lose()
     }
-
+})
+//crystal 2
  $('#crystal2').on('click', function(){
     userCurrentScore = userCurrentScore + crystal2;
     console.log("Current total: " + userCurrentScore);
@@ -69,7 +75,8 @@ $('#crystal1').on('click', function(){
      else if (userCurrentScore >= randomNumber){
         lose()
     }
-
+ })
+//crystal 3
 $('#crystal3').on('click', function(){
     userCurrentScore = userCurrentScore = crystal3;
     console.log("Current Total: " + userCurrentScore);
@@ -81,7 +88,8 @@ $('#crystal3').on('click', function(){
     else if (userCurrentScore >= randomNumber){
         lose()
     }
-
+})
+//crystal4
 $('#crystal4').on('click', function(){
     userCurrentScore = userCurrentScore + crystal4;
     console.log("Current Total: " + userCurrentScore);
@@ -92,10 +100,5 @@ $('#crystal4').on('click', function(){
     }
     else if (userCurrentScore >= randomNumber){
         lose()
-    }
-})
-})
-
-})
-})
+    }})
 })
