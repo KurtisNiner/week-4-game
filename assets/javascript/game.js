@@ -19,14 +19,14 @@ $('#howManyWins').text(wins)
 $('#howManyLosses').text(losses)
 
 function resetGame(){
+    userCurrentScore=0;
     randomNumber=Math.floor(Math.random()*101 + 19);
     console.log(randomNumber);
     $('#targetNumber').text(randomNumber);
-    crystal1= Math.floor(math.random()*11+1)
-    crystal2= Math.floor(math.random()*11+1)
-    crystal3= Math.floor(math.random()*11+1)
-    crystal4= Math.floor(math.random()*11+1)
-    userCurrentScore=0;
+    crystal1= Math.floor(Math.random()*11+1);
+    crystal2= Math.floor(Math.random()*11+1);
+    crystal3= Math.floor(Math.random()*11+1);
+    crystal4= Math.floor(Math.random()*11+1);
     $('#yourTotalScore').text(userCurrentScore);
 }
 
@@ -34,14 +34,14 @@ function win(){
     alert("BRO/SIS, YOU WIN!");
     wins++;
     $('#howManyWins').text(wins);
-    resetGame();
+    resetGame()
 }
 
 function lose(){
     alert("BRO/SIS, YOU LOST, THAT REALLY SUCKS, GO GET ICE CREAM TO CHEER YOU UP");
-    howManyLosses++;
+    losses++;
     $('#howManyLosses').text(losses);
-    resetGame();
+    resetGame()
 }
 
 $('#crystal1').on('click', function(){
