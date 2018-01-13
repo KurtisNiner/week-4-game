@@ -7,7 +7,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
     
     <title>Document</title>
 </head>
@@ -34,7 +34,7 @@
     </div>
     
     <div class="identifyTargetNumber">
-        <h2>Your Target Number is: <span class="targetNumber"></span></h2>
+        <h2>Your Target Number is: <span id="targetNumber"></span></h2>
             
     <div class="crystalImages">
         <img class="gem" id="crystal1" src="assets/images/orange-gem.jpeg" style="width: 150px; height: 150px" alt="orange Gem Stone">
@@ -43,10 +43,12 @@
         <img class="gem" id="crystal4" src="assets/images/circle-gem.png " style="width: 150px; height: 150px" alt="circle Gem Stone">
     </div>
 
-    <p id="scoreMarker">Your Total Score is: <span id="yourTotalScore"></span></p>
-   
+    <div class="scoreMarker">Your Total Score is: <span id="yourTotalScore"></span></div>
+    <div class="totalWins">wins: <span id="howManyWins"></span> </div>
+    <div class="totalLosses">losses: <span id="howManyLosses"></span></div>
 
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  
     
 </body>
 </html>
