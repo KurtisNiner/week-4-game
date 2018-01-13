@@ -1,0 +1,25 @@
+ body{
+    margin: 10px;
+    padding: 10px;
+    background-color: lightblue !important;
+
+}
+
+.jumbotron, .instructions{
+    text-align: center;
+    line-height: 30px;
+    background-color:lightblue !important;
+}
+
+h2, .scoreMarker, .totalWins, .totalLosses{
+    text-align: center;
+    line-height: 40px;
+ 
+}
+
+.gem{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey !important;
+}

@@ -53,7 +53,7 @@ $('#crystal1').on('click', function(){
         win()
     }
 
-    else if (userCurrentScore > randomNumber){
+    else if (userCurrentScore >= randomNumber){
         lose()
     }
 
@@ -66,7 +66,7 @@ $('#crystal1').on('click', function(){
           win()
     }
     
-     else if (userCurrentScore > randomNumber){
+     else if (userCurrentScore >= randomNumber){
         lose()
     }
 
@@ -78,7 +78,7 @@ $('#crystal3').on('click', function(){
     if(userCurrentScore === randomNumber){
         win()
     }
-    else if (userCurrentScore > randomNumber){
+    else if (userCurrentScore >= randomNumber){
         lose()
     }
 
@@ -90,8 +90,8 @@ $('#crystal4').on('click', function(){
     if(userCurrentScore === randomNumber){
         win()
     }
-    else if (userCurrentScore > randomNumber){
-        lose();
+    else if (userCurrentScore >= randomNumber){
+        lose()
     }
 })
 })
